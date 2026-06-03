@@ -11,6 +11,10 @@
 </p>
 
 <p align="center">
+  <b>English</b>&nbsp;&nbsp;·&nbsp;&nbsp;<a href="README.th.md">ไทย</a>
+</p>
+
+<p align="center">
   <b>One interface. The best image model for every job.</b><br>
   charkathat routes each request to the most suitable configured provider and falls back automatically if one fails —<br>
   so you simply describe what you want and get a finished image.
