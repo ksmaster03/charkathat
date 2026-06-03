@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="340" viewBox="0 0 1280 340" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif">
+  <defs>
+    <linearGradient id="brand" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#a78bfa"/>
+      <stop offset="0.55" stop-color="#7c3aed"/>
+      <stop offset="1" stop-color="#06b6d4"/>
+    </linearGradient>
+    <linearGradient id="brandSoft" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#7c3aed"/>
+      <stop offset="1" stop-color="#22d3ee"/>
+    </linearGradient>
+    <radialGradient id="glowA" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#7c3aed" stop-opacity="0.55"/>
+      <stop offset="1" stop-color="#7c3aed" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glowB" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#06b6d4" stop-opacity="0.45"/>
+      <stop offset="1" stop-color="#06b6d4" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="dots" width="26" height="26" patternUnits="userSpaceOnUse">
+      <circle cx="1.5" cy="1.5" r="1.5" fill="#ffffff" fill-opacity="0.035"/>
+    </pattern>
+  </defs>
+
+  <!-- backdrop -->
+  <rect width="1280" height="340" fill="#0b0d12"/>
+  <rect width="1280" height="340" fill="url(#dots)"/>
+  <circle cx="1120" cy="40" r="360" fill="url(#glowA)"/>
+  <circle cx="120" cy="320" r="300" fill="url(#glowB)"/>
+  <rect x="0" y="338" width="1280" height="2" fill="url(#brandSoft)" opacity="0.7"/>
+
+  <!-- wordmark + copy -->
+  <g>
+    <text x="72" y="150" font-size="78" font-weight="800" fill="url(#brand)" letter-spacing="-1">charkathat</text>
+    <text x="76" y="196" font-size="22" font-weight="500" fill="#c7cedb">Multi-provider AI image generation for Claude</text>
+    <text x="76" y="224" font-size="15" fill="#7e8799" letter-spacing="2">GENERATE  ·  EDIT  ·  REFERENCE  ·  PRESETS  ·  BATCH</text>
+  </g>
+
+  <!-- mode pills -->
+  <g font-size="14" font-weight="600" letter-spacing="1">
+    <g>
+      <rect x="76" y="258" width="86" height="34" rx="17" fill="#12161f" stroke="#2dd4bf" stroke-opacity="0.6"/>
+      <text x="119" y="280" fill="#6ee7b7" text-anchor="middle">SKILL</text>
+    </g>
+    <g>
+      <rect x="172" y="258" width="74" height="34" rx="17" fill="#12161f" stroke="#7c3aed" stroke-opacity="0.6"/>
+      <text x="209" y="280" fill="#c4b5fd" text-anchor="middle">CLI</text>
+    </g>
+    <g>
+      <rect x="256" y="258" width="78" height="34" rx="17" fill="#12161f" stroke="#22d3ee" stroke-opacity="0.6"/>
+      <text x="295" y="280" fill="#67e8f9" text-anchor="middle">MCP</text>
+    </g>
+  </g>
+
+  <!-- abstract gallery composition -->
+  <g>
+    <!-- 9:16 card -->
+    <g transform="rotate(-7 960 170)">
+      <rect x="912" y="96" width="96" height="170" rx="12" fill="#11151d" stroke="url(#brandSoft)" stroke-width="1.5"/>
+      <rect x="924" y="206" width="72" height="9" rx="4.5" fill="#2a3340"/>
+      <rect x="924" y="222" width="48" height="9" rx="4.5" fill="#1f2733"/>
+      <circle cx="960" cy="150" r="26" fill="url(#brand)" opacity="0.85"/>
+    </g>
+    <!-- 1:1 card -->
+    <g transform="rotate(5 1090 178)">
+      <rect x="1012" y="104" width="156" height="156" rx="14" fill="#141923" stroke="#2dd4bf" stroke-opacity="0.55" stroke-width="1.5"/>
+      <circle cx="1064" cy="156" r="30" fill="#7c3aed" opacity="0.8"/>
+      <circle cx="1108" cy="186" r="20" fill="#06b6d4" opacity="0.75"/>
+      <rect x="1028" y="222" width="92" height="9" rx="4.5" fill="#2a3340"/>
+    </g>
+    <!-- 16:9 chip -->
+    <g transform="rotate(-3 1150 96)">
+      <rect x="1066" y="60" width="150" height="84" rx="12" fill="#0f141d" stroke="#a78bfa" stroke-opacity="0.5" stroke-width="1.5"/>
+      <rect x="1080" y="116" width="84" height="8" rx="4" fill="#27303d"/>
+      <path d="M1086 104 l16 -20 l14 16 l12 -10 l18 24 z" fill="url(#brandSoft)" opacity="0.85"/>
+      <circle cx="1096" cy="84" r="7" fill="#6ee7b7"/>
+    </g>
+    <!-- floating accents -->
+    <circle cx="884" cy="80" r="4" fill="#22d3ee" opacity="0.8"/>
+    <circle cx="1212" cy="250" r="5" fill="#a78bfa" opacity="0.8"/>
+    <circle cx="896" cy="262" r="3" fill="#6ee7b7" opacity="0.7"/>
+  </g>
+</svg>
