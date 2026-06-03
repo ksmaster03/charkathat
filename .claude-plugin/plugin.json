@@ -1,0 +1,27 @@
+{
+  "name": "charkathat",
+  "version": "0.1.0",
+  "description": "God-tier multi-provider AI image generation for Claude — generate, edit, reference, presets, batch + gallery. Gemini, OpenAI, and HuggingFace with automatic provider selection and fallback.",
+  "author": {
+    "name": "ksmaster03"
+  },
+  "homepage": "https://github.com/ksmaster03/charkathat",
+  "license": "MIT",
+  "keywords": ["image-generation", "gemini", "openai", "flux", "mcp", "skill"],
+  "skills": ["./skills/visual-creation"],
+  "mcpServers": {
+    "creative-pipeline": {
+      "command": "node",
+      "args": ["${CLAUDE_PLUGIN_ROOT}/core/build/mcp.bundle.js"],
+      "env": {
+        "GEMINI_API_KEY": "${GEMINI_API_KEY}",
+        "OPENAI_API_KEY": "${OPENAI_API_KEY}",
+        "HF_TOKEN": "${HF_TOKEN}",
+        "CHARKATHAT_GEMINI_MODEL": "${CHARKATHAT_GEMINI_MODEL:-gemini-3-pro-image-preview}",
+        "CHARKATHAT_OUTPUT_DIR": "${CHARKATHAT_OUTPUT_DIR:-charkathat-output}",
+        "CHARKATHAT_REQUEST_TIMEOUT_MS": "${CHARKATHAT_REQUEST_TIMEOUT_MS:-90000}",
+        "CHARKATHAT_LOG_LEVEL": "${CHARKATHAT_LOG_LEVEL:-info}"
+      }
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "name": "charkathat-core",
+  "version": "0.1.0",
+  "description": "God-tier multi-provider AI image generation for Claude (CLI + MCP)",
+  "type": "module",
+  "private": true,
+  "bin": {
+    "charkathat": "build/cli.bundle.js",
+    "charkathat-mcp": "build/mcp.bundle.js"
+  },
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "bundle:cli": "esbuild src/cli.ts --bundle --platform=node --target=node18 --format=esm --outfile=build/cli.bundle.js --banner:js=\"import{createRequire}from'module';const require=createRequire(import.meta.url);\"",
+    "bundle:mcp": "esbuild src/mcp.ts --bundle --platform=node --target=node18 --format=esm --outfile=build/mcp.bundle.js --banner:js=\"import{createRequire}from'module';const require=createRequire(import.meta.url);\"",
+    "bundle": "npm run bundle:cli && npm run bundle:mcp",
+    "build": "npm run typecheck && npm run bundle"
+  },
+  "dependencies": {
+    "@google/genai": "^1.39.0",
+    "@modelcontextprotocol/sdk": "^1.22.0",
+    "zod": "^3.25.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "esbuild": "^0.25.0",
+    "typescript": "^5.7.0"
+  }
+}

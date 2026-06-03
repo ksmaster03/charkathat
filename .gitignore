@@ -1,0 +1,25 @@
+# dependencies
+node_modules/
+
+# build output (bundles are committed; keep tsc artifacts out)
+core/build/*.d.ts
+core/build/*.tsbuildinfo
+
+# secrets
+.env
+*.env
+!*.env.example
+
+# generated images & galleries (don't commit user output)
+generated-images/
+**/charkathat-output/
+*.gallery.html
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# logs
+*.log
